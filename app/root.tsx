@@ -30,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta property="og:image" content="/og.png" />
+        <meta property="og:image" content="https://miudc.vercel.app/og.png" />
         <Meta />
         <Links />
       </head>
