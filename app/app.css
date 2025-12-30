@@ -78,6 +78,10 @@ body {
   animation: fadeInUp 0.8s ease-out 2s forwards;
 }
 
+.animate-fadeInUp {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
 .film-grain {
   opacity: 0.025;
   background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);

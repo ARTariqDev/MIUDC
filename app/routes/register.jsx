@@ -2,19 +2,15 @@
 
 import { useState } from "react";
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Location from "../components/Location";
 
 export function meta({}) {
   return [
-    { title: "JT MIUDC" },
-    { name: "description", content: "The 8th Edition of MIUDC" },
+    { title: "Register - JT MIUDC" },
+    { name: "description", content: "Register for the 8th Edition of MIUDC" },
   ];
 }
 
-export default function Home() {
+export default function Register() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -46,20 +42,16 @@ export default function Home() {
       {/* Global Film Grain */}
       <div className="film-grain fixed inset-0 z-10" />
       
-      <div className="relative z-20">
+      <div className="relative z-20 h-screen flex flex-col">
         <Navbar />
-        <main>
-          <section id="home">
-            <Hero />
-          </section>
-          <section id="about">
-            <About />
-          </section>
-          <section id="contact" className="relative w-full border-t border-b border-white/20 flex flex-col md:flex-row">
-            <Contact />
-            <div className="hidden md:block w-px bg-white/20" />
-            <Location />
-          </section>
+        <main className="flex-1 overflow-hidden">
+          <iframe
+            src="https://miudc26.fillout.com/t/qcBjcvnJ5Uus"
+            width="100%"
+            height="100%"
+            style={{ border: 'none' }}
+            className="w-full h-full"
+          />
         </main>
         <footer className="bg-black/60 backdrop-blur-md border-t border-white/10 py-4 text-center text-white/60 text-sm">
           <p style={{ fontFamily: 'var(--font-sans)' }} className="flex items-center justify-center gap-2">

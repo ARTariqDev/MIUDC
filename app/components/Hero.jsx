@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 import Button from "./Button";
 
 export default function Hero() {
@@ -133,14 +134,15 @@ export default function Hero() {
       </div>
       
       <div className="mt-8 button-animate relative z-30">
-        <Button 
-          text="Register"
-          color="#000000"
-          textColor="#ffffff"
-          glowColor="#ffffff"
-          borderColor="rgba(200, 200, 200, 0.15)"
-          onClick={() => window.open('/invite.pdf', '_blank')}
-        />
+        <Link to="/register">
+          <Button 
+            text="Register"
+            color="#000000"
+            textColor="#ffffff"
+            glowColor="#ffffff"
+            borderColor="rgba(200, 200, 200, 0.15)"
+          />
+        </Link>
       </div>
     </div>
   );
