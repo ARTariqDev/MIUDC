@@ -11,7 +11,12 @@ export default function About() {
     '/images/carousel/Image 8240 from Google Drive.PNG',
     '/images/carousel/Image 8241.PNG',
     '/images/carousel/Image 8242 from Google Drive.PNG',
-    '/images/carousel/Image 8244 from Google Drive.PNG'
+    '/images/carousel/Image 8244 from Google Drive.PNG',
+    '/images/carousel/WhatsApp Image 2025-12-31 at 21.22.50.jpeg',
+    '/images/carousel/WhatsApp Image 2025-12-31 at 21.23.18.jpeg',
+    '/images/carousel/WhatsApp Image 2025-12-31 at 21.23.36.jpeg',
+    '/images/carousel/WhatsApp Image 2025-12-31 at 21.23.39.jpeg',
+    '/images/carousel/WhatsApp Image 2025-12-31 at 21.23.40.jpeg'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,7 +58,7 @@ export default function About() {
           
           <div className="md:flex md:items-stretch md:gap-8">
             {/* Carousel */}
-            <div className="float-right w-2/3 ml-4 mb-4 md:float-none md:w-1/2 md:ml-0 md:mb-0 relative overflow-hidden rounded-lg aspect-[4/3] md:aspect-auto md:h-[350px]">
+            <div className="float-right w-2/3 ml-4 mb-4 md:float-none md:w-1/2 md:ml-0 md:mb-0 relative overflow-hidden rounded-lg aspect-[4/3] md:aspect-auto md:h-[400px]">
               {images.map((img, index) => (
                 <img
                   key={index}
@@ -62,12 +67,13 @@ export default function About() {
                   className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
                     index === currentIndex ? 'opacity-100' : 'opacity-0'
                   }`}
+                  style={{ objectPosition: 'top' }}
                 />
               ))}
             </div>
 
             {/* About Text */}
-            <div className="md:w-1/2 md:flex md:items-center md:h-[350px]">
+            <div className="md:w-1/2 md:flex md:items-center md:h-[400px]">
               <div>
                 <h2 className="hidden md:block text-5xl font-light mb-8" style={{ fontFamily: 'var(--font-cursive)' }}>
                   About MIUDC

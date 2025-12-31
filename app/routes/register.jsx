@@ -44,12 +44,12 @@ export default function Register() {
       
       <div className="relative z-20 h-screen flex flex-col">
         <Navbar />
-        <main className="flex-1 overflow-hidden">
+        <main className="flex-1 mt-14">
           <iframe
             src="https://miudc26.fillout.com/t/qcBjcvnJ5Uus"
             width="100%"
             height="100%"
-            style={{ border: 'none' }}
+            style={{ border: 'none', height: 'calc(100dvh - 56px - 56px)' }}
             className="w-full h-full"
           />
         </main>
