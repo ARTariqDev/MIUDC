@@ -32,6 +32,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta property="og:image" content="https://miudc.vercel.app/og.png" />
         <meta name="google-site-verification" content="NowvXA1Cnoi8Ddi97wi-WcKhIYp5PxCVOyN7C7fJTFo" />
+        <meta name="description" content="The 8th Edition of MIUDC - LGS JT Urdu Debates Competition. Register now for the premier Urdu debating event in Pakistan." />
+        <meta name="keywords" content="MIUDC, Urdu Debates, LGS JT, Debating, Competition, Lahore, Pakistan, Register" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://miudc.vercel.app/" />
+        <meta property="og:title" content="MIUDC - LGS JT Urdu Debates Competition" />
+        <meta property="og:description" content="The 8th Edition of MIUDC - LGS JT Urdu Debates Competition. Register now for the premier Urdu debating event in Pakistan." />
+        <meta property="og:url" content="https://miudc.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="MIUDC - LGS JT Urdu Debates Competition" />
+        <meta name="twitter:description" content="The 8th Edition of MIUDC - LGS JT Urdu Debates Competition. Register now for the premier Urdu debating event in Pakistan." />
+        <meta name="twitter:image" content="https://miudc.vercel.app/og.png" />
         <Meta />
         <Links />
       </head>
